@@ -54,4 +54,4 @@ for sp2, p, sp in getpaths():
         print "WOULD YOU CARE FOR SOME TEA?"
         continue
 
-open('data.json', 'w').write(json.dumps(allthings) + '\n')
+open('boilerplate.json', 'w').write(json.dumps(allthings) + '\n')
