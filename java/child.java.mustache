@@ -1,0 +1,12 @@
+package {{ packagename }}
+
+public{{# modifiers}} {{ . }}{{/ modifiers }} class {{ classname }} extends {{ parentname }} {
+
+  {{# ivars }}
+  {{ access }} {{# static }}static{{/ static }} {{ type }} {{ ivarname }}
+  {{/ ivars }}
+
+  public {{ classname }}() {
+
+  }
+}
