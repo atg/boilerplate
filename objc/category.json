@@ -1,0 +1,7 @@
+{
+  "fields": [
+    { "type": "text", "name": "classname", "label": "Class Name" },
+    { "type": "text", "name": "categoryname", "label": "Category Name" }
+  ]
+}
+
