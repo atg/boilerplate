@@ -1,0 +1,6 @@
+{
+  "fields": [
+    { "type": "text", "name": "classname", "label": "Class Name" }
+  ]
+}
+

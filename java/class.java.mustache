@@ -1,12 +1,8 @@
-package {{ packagename }}
+package ___;
 
-public{{# modifiers}} {{ . }}{{/ modifiers }} class {{ classname }} {
-  
-  {{# ivars }}
-  {{ access }} {{# static }}static{{/ static }} {{ type }} {{ ivarname }}
-  {{/ ivars }}
-  
-  public {{ classname }}() {
+public class {{ classname }}{{#superclass}} extends {{superclass}}{{/superclass}} {
     
-  }
+    public {{ classname }}() {
+        
+    }
 }

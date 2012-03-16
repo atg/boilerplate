@@ -1,17 +1,11 @@
-#ifndef {{ guard }}
-#define {{ guard }}
+#ifndef {{ FILENAME }}_H
+#define {{ FILENAME }}_H
 
-class {{ classname }}{{# derived }}
+class {{ classname }}
 {
-{{# private }}
-
-{{/ private }}
-
-{{# public }}
-{{/ public }}
 public:
-  {{ classname }}();
-  ~{{ classname }}();
+  {{ classname }}( ___ ) : ___ { }
+  virtual ~{{ classname }}();
 };
 
-#endif {{ guard }}
+#endif {{ FILENAME }}_H
