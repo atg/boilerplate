@@ -1,6 +1,6 @@
 {
   "fields": [
-    { "type": "text", "name": "classname", "label": "Class Name" }
+    { "type": "text", "name": "classname", "label": "Class Name" },
     { "type": "text", "name": "superclass", "label": "Superclass", "optional": true }
   ]
 }
