@@ -35,6 +35,7 @@ for sp2, p, sp in getpaths():
     k = selector + '/' + identifier
     if k not in allthings:
         allthings[k] = {
+            'displayname': identifier.capitalize(),
             'identifier': identifier,
             'selector': selector,
             'files': [],
@@ -43,6 +44,9 @@ for sp2, p, sp in getpaths():
     if len(sp.split('.')) == 2:
         # json
         allthings[k]['definition'] = json.loads(readf(sp2))
+        if 'displayname' in allthings[k]['definition']:
+            allthings[k]['displayname'] = allthings[k]['definition']['displayname']
+        
     elif len(sp.split('.')) == 3:
         # file
         allthings[k]['files'].append({
